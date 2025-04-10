@@ -140,6 +140,53 @@ body {
   display: none;
 }
 
+.success-message {
+  color: var(--clr-text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 22rem;
+  background-color: var(--clr-bg-card);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.success-message > img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.success-message > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.success-message > p {
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+.success-message > button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--clr-bg-primary);
+  cursor: pointer;
+  outline: none;
+}
+
+.success-message > button:hover {
+  background: var(--btn-linear-gradient);
+  box-shadow: 0px 10px 15px 0px rgba(255, 105, 62, 0.5);
+}
+
+.d_none {
+  display: none;
+}
+
 @media (width <= 54rem) {
   .illustration.mobile {
     display: block;
@@ -161,6 +208,11 @@ body {
     align-items: unset;
   }
 
+  .container:has(.success-message) {
+    justify-content: center;
+    align-items: center;
+  }
+
   .card {
     border-radius: 0;
     padding: 0;
@@ -169,5 +221,22 @@ body {
 
   .card-body {
     flex: 1;
+  }
+}
+
+@media (width <= 27rem) {
+  .container:has(.success-message) {
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  .success-message {
+    max-width: 100%;
+    justify-content: center;
+    padding-top: 10rem;
+  }
+
+  .success-message > button {
+    margin-top: auto;
   }
 }
