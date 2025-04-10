@@ -1,0 +1,14 @@
+:root {
+  /* background colors */
+  --clr-bg-body: #36384d;
+  --clr-bg-card: #ffffff;
+  --clr-bg-check: #f86759;
+  --clr-bg-primary: #232742;
+
+  /* text colors */
+  --clr-text-primary: #ffffff;
+
+  /* button gradient */
+  --btn-gradient-bg: rgb(255, 83, 121);
+  --btn-linear-gradient: linear-gradient(90deg, rgba(255, 83, 121, 1) 0%, rgba(255, 105, 62, 1) 100%);
+}
