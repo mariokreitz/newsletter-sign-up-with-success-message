@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const card = document.querySelector(".card");
-  const form = document.querySelector(".subcribe-form");
-  const successMessage = document.querySelector(".success-message");
+  console.info("DOM fully loaded and parsed");
+
+  const { form, card, successMessage } = getDomElements();
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -9,3 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     successMessage.classList.remove("d_none");
   });
 });
+function getDomElements() {
+  const card = document.querySelector(".card");
+  const form = document.querySelector(".subcribe-form");
+  const successMessage = document.querySelector(".success-message");
+  return { form, card, successMessage };
+}
