@@ -8,9 +8,33 @@
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   </head>
   <body>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-      <a href="#">Mario Kreitz</a>.
-    </div>
+    <main class="container">
+      <section class="card">
+        <div class="card-body">
+          <header class="card-header">
+            <h1>Stay updated!</h1>
+          </header>
+          <div class="card-content">
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+              <li><img src="./assets/images/icon-list.svg" alt="icon-list" />Product discovery and building what matters</li>
+              <li><img src="./assets/images/icon-list.svg" alt="icon-list" />Measuring to ensure updates are a success</li>
+              <li><img src="./assets/images/icon-list.svg" alt="icon-list" />And much more!</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <form>
+              <label for="email">Email address</label>
+              <div class="form-field">
+                <input type="email" id="email" placeholder="email@company.com" />
+                <button type="submit">Subscribe to monthly newsletter</button>
+              </div>
+            </form>
+          </footer>
+        </div>
+        <img class="illustration mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-desktop" />
+        <img class="illustration desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" />
+      </section>
+    </main>
   </body>
 </html>
