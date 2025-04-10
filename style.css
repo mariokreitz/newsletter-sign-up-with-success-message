@@ -41,10 +41,116 @@ body {
   overflow: hidden;
   width: 100%;
   display: flex;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
+  border-radius: 2rem;
+  padding: 1.25rem;
+  width: 52rem;
+  height: 34rem;
+  justify-content: space-between;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.card-header > h1 {
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+.card-content > p {
+  margin: 1.5rem 0;
+  line-height: 1.5;
+}
+
+.card-content > ul {
+  margin: 1.5rem 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.card-content > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content > ul > li > img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.subcribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.subcribe-form > label {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-field > input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px rgba(128, 128, 128, 0.5) solid;
+}
+
+.form-field > input:focus {
+  outline: none;
+  border: 1px var(--clr-bg-primary) solid;
+}
+
+.form-field > input::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.form-field > button[type="submit"] {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--clr-bg-primary);
+  cursor: pointer;
+  outline: none;
+}
+
+.form-field > button[type="submit"]:hover {
+  background: var(--btn-linear-gradient);
+  box-shadow: 0px 10px 15px 0px rgba(255, 105, 62, 0.5);
 }
 
 .illustration.mobile {
   display: none;
+}
+
+@media (width <= 54rem) {
+  .illustration.mobile {
+    display: block;
+  }
+  .illustration.desktop {
+    display: none;
+  }
+  .card {
+    flex-direction: column-reverse;
+    height: auto;
+    width: auto;
+    padding: 1.5rem;
+  }
 }
