@@ -1,4 +1,4 @@
-# Frontend Mentor - Newsletter sign-up form with success message
+# Frontend Mentor - Newsletter sign-up form with success message [![Netlify Status](https://api.netlify.com/api/v1/badges/38f4b226-b567-4262-b08e-0283da0b372d/deploy-status)](https://app.netlify.com/sites/frontendmentor-newsletter-signup/deploys)
 
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./preview.jpg)
 
